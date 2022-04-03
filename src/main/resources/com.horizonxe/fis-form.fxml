@@ -39,13 +39,13 @@
                   BorderPane.alignment="CENTER">
                 <ComboBox fx:id="projectMenu" layoutX="204.0" layoutY="126.0" prefHeight="35.0" prefWidth="211.0"
                           stylesheets="@styles.css"/>
-                <Label layoutX="40.0" layoutY="127.0" prefHeight="33.0" prefWidth="137.0" text="Project Name"
+                <Label layoutX="40.0" layoutY="127.0" prefHeight="33.0" prefWidth="137.0" text="Angular/Non Angular"
                        textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="16.0"/>
                     </font>
                 </Label>
-                <Label layoutX="41.0" layoutY="189.0" prefHeight="28.0" prefWidth="135.0" text="Module Name"
+                <Label layoutX="41.0" layoutY="189.0" prefHeight="28.0" prefWidth="135.0" text="Tagname"
                        textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="16.0"/>
