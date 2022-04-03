@@ -80,8 +80,13 @@ public class MainController {
     }
 
     private void writeData(BufferedWriter writer, String project, String module) throws IOException {
-        String executeCmds = "ls ";    // Add execute before all commands here
-        writer.append(executeCmds).append(" && mvn -DProj ").append(project).append(" -DMod ").append(module);
+	 if (project.equalsIgnoreCase("Angular")) {
+		String executeCmds = "cd C:\\Automation\\Dev\\Automation\\XEAngularAutomation ";    // Add execute before all commands here
+                writer.append(executeCmds).append(" && mvn verify -Dcucumber.filter.tags= ").append(module).append(" -Dbrowser1=Edge ");
+		} else if (project.equalsIgnoreCase("NonAngular")) {
+		String executeCmds = "cd C:\\Automation\\Dev\\Automation\\XEAutomation ";    // Add execute before all commands here
+                writer.append(executeCmds).append(" && mvn verify -Dcucumber.filter.tags= ").append(module).append(" -Dbrowser1=Edge ");
+		} 
     }
 
     private void initData() throws IOException {
