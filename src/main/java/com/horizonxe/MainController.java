@@ -82,10 +82,10 @@ public class MainController {
     private void writeData(BufferedWriter writer, String project, String module) throws IOException {
 	 if (project.equalsIgnoreCase("Angular")) {
 		String executeCmds = "cd C:\\Automation\\Dev\\Automation\\XEAngularAutomation ";    // Add execute before all commands here
-                writer.append(executeCmds).append(" && mvn verify -Dcucumber.filter.tags= @\"").append(module).append(\"" -Dbrowser1=Edge ");
+                writer.append(executeCmds).append(" && mvn verify -Dcucumber.filter.tags= @\"").append(module).append("\" -Dbrowser1=Chrome");
 		} else if (project.equalsIgnoreCase("NonAngular")) {
 		String executeCmds = "cd C:\\Automation\\Dev\\Automation\\XEAutomation ";    // Add execute before all commands here
-                writer.append(executeCmds).append(" && mvn verify -Dcucumber.filter.tags= @\"").append(module).append(\"" -Dbrowser1=Edge ");
+                writer.append(executeCmds).append(" && mvn verify -Dcucumber.filter.tags= @\"").append(module).append("\" -Dbrowser1=Chrome");
 		} 
     }
 
